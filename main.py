@@ -21,6 +21,8 @@ app.add_middleware(
 app.include_router(user_router)
 app.include_router(ai_response_router)
 app.include_router(email_router)
+from routes.chat_routes import router as chat_router
+app.include_router(chat_router)
 
 
 
